@@ -109,6 +109,18 @@ body {
   border-radius: 5px;
 }
 
+.userInputForm {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+
+.userInput {
+  padding: 5px;
+  width: 50%;
+  text-align: center;
+}
+
 @media (max-width: 800px) {
   .container .pokemon {
     width: 100%;
