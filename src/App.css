@@ -110,14 +110,13 @@ body {
 }
 
 .userInputForm {
-  display: flex;
-  justify-content: center;
-  margin: 40px;
+  flex: 1 0 100%;
+  text-align: center;
 }
 
 .userInput {
-  padding: 5px;
   width: 50%;
+  padding: 5px;
   text-align: center;
 }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useQuery } from '@apollo/react-hooks'
 import Pokemon from '../components/Pokemon'
 import { GET_POKEMONS } from '../graphql/get-pokemons'
@@ -18,10 +18,10 @@ export const PokemonsContainer = () => {
     e.preventDefault()
     const input = e.target.value
 
-    if (input <= 0) {
+    if (input <= 0 || !input) {
       setInput(DEFAULT_VALUE)
+      return
     }
-
     setInput(input)
   }
 

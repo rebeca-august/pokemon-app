@@ -2,9 +2,9 @@ import React from 'react'
 
 const UserInput = ({ defaultValue, handleInput }) => {
   return (
-    <div>
+    <div className="userInputForm">
       <h2>How many Pokemons are you looking for?</h2>
-      <form className="userInputForm">
+      <form>
         <input
           className="userInput"
           onChange={handleInput}
